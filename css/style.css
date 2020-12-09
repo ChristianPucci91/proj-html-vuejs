@@ -106,3 +106,17 @@ header {
 .section_2 > h1 {
   font-size: 40px;
 }
+
+/* Section 3 */
+
+.section_3 {
+  display: flex;
+  margin-top:100px;
+}
+.section_3 > * {
+  width: 50%;
+}
+.section_3_numbers{
+  display: flex;
+  justify-content: flex-start;
+}
