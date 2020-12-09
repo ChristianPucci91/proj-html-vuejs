@@ -19,5 +19,6 @@ var app = new Vue({
      {img:"img/h5-custom-icon-5.png",text:"Science"},
      {img:"img/h5-custom-icon-6.png",text:"DIY&Craft"}
    ]
+
   }
 })

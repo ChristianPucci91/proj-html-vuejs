@@ -97,3 +97,12 @@ header {
   margin:10px 0;
   text-align: center;
 }
+
+/* Section 2 */
+
+.section_2 > * {
+  margin:20px;
+}
+.section_2 > h1 {
+  font-size: 40px;
+}
