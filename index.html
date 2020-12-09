@@ -144,13 +144,23 @@
           </div>
 
         </section>
-        <section> <!-- sezione 5 del main -->
+        <section class="container section_5"> <!-- sezione 5 del main -->
 
-          <div> <!-- menu stile dropdown  -->
+          <div class="section_5_menu"> <!-- menu stile dropdown  -->
+
+            <div v-for="box in section5"class="section_5_box">
+              {{box.text}}
+            </div>
 
           </div>
-          <div> <!-- testo a lato del menu -->
-
+          <div class="section_5_text"> <!-- testo a lato del menu -->
+            <h1>Learning Possibilities</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <span><i class="fas fa-check"></i>We enrich lives through learning.</span>
+            <span><i class="fas fa-check"></i>We enrich lives through learning.</span>
+            <span><i class="fas fa-check"></i>We enrich lives through learning.</span>
+            <span><i class="fas fa-check"></i>We enrich lives through learning.</span>
+            <span><i class="fas fa-check"></i>We enrich lives through learning.</span>
           </div>
           <div> <!-- img probabilmente in position absolute -->
 

@@ -18,6 +18,14 @@ var app = new Vue({
      {img:"img/h5-custom-icon-4.png",text:"Chemistry"},
      {img:"img/h5-custom-icon-5.png",text:"Science"},
      {img:"img/h5-custom-icon-6.png",text:"DIY&Craft"}
+   ],
+   section5:[ // menu drop sezione 5
+     {text:"What We Do"},
+     {text:"Degree Programme"},
+     {text:"Career Achievements"},
+     {text:"Personal Managment"},
+     {text:"Steps To Success"},
+     {text:"Knowledge Transfer"},
    ]
 
   }
