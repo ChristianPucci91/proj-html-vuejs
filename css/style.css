@@ -100,10 +100,14 @@ header {
 
 /* Section 2 */
 
-.section_2 > * {
+.section_2 {
+  margin:50px auto;
+}
+
+.section_2_text > * {
   margin:20px;
 }
-.section_2 > h1 {
+.section_2_text > h1 {
   font-size: 40px;
 }
 
@@ -111,7 +115,7 @@ header {
 
 .section_3 {
   display: flex;
-  margin-top:100px;
+  margin:50px auto;
 }
 .section_3 > * {
   width: 50%;
@@ -119,4 +123,27 @@ header {
 .section_3_numbers{
   display: flex;
   justify-content: flex-start;
+  margin:50px auto;
+}
+
+/* Section 4 */
+
+.section_4 {
+  background-image: url("../img/h5-parallax-img-1.png");
+  background-position-x: center;
+  height: 635px;
+}
+.section_4_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.section_4_text > *{
+  margin:25px auto;
+  text-align: center;
+}
+.logo_section_4 {
+  width: 150px;
 }
