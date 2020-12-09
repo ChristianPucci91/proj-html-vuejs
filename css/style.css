@@ -186,7 +186,6 @@ header {
 
 .section_6 {
   background-image: url("../img/background-pattern.jpg");
-  height: 500px;
   margin:100px auto;
 }
 .section_6_top {
@@ -231,4 +230,53 @@ header {
 .section_6_bottom {
   text-align: center;
   margin:40px auto;
+}
+
+/* Section 7 */
+
+.section_7 {
+  background-image: url("../img/background-pattern.jpg");
+  margin:100px auto;
+}
+.section_7_title{
+  text-align: center;
+  margin:100px auto;
+}
+#table_first {
+  height: 300px;
+}
+.table {
+  display: flex;
+  min-height: 800px;
+}
+.table_column {
+  width: 25%;
+}
+.table_top {
+  height: 250px;
+  border:1px solid grey;
+}
+.table_box {
+  height: 80px;
+  border:1px solid grey;
+}
+.button_box{
+  height: 100px;
+  border:1px solid grey;
+}
+
+/* Section 8 */
+
+.section_8{
+  display: flex;
+  margin:100px auto;
+}
+.section_8_img {
+  width: 25%;
+}
+
+/* Footer */
+
+footer {
+  background: grey;
 }
