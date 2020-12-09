@@ -151,6 +151,7 @@ header {
 /* Section_5 */
 
 .section_5 {
+  position: relative;
   display: flex;
 }
 .section_5_menu {
@@ -173,4 +174,61 @@ header {
   text-align: left;
   line-height: 80px;
   padding-left: 30px;
+}
+.section_5_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+}
+
+/* Section 6 */
+
+.section_6 {
+  background-image: url("../img/background-pattern.jpg");
+  height: 500px;
+  margin:100px auto;
+}
+.section_6_top {
+  text-align: center;
+  margin: 50px;
+}
+.section_6_middle{
+  display: flex;
+  justify-content: center;
+}
+.section_6_box {
+  width: 30%;
+  margin:auto;
+  border:1px solid grey;
+  min-height: 600px;
+}
+.section_6_title {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-top:20px;
+  padding: 10px;
+}
+.section_6_title > span {
+  background: yellow;
+  padding: 2px 10px;
+  border-radius: 30px;
+}
+.section_6_text h3 {
+  padding: 10px;
+}
+.section_6_text p {
+  margin:20px auto;
+  padding: 10px;
+}
+.section_6_user{
+  padding: 10px;
+}
+.section_6_user > * {
+  margin-right: 10px;
+}
+.section_6_bottom {
+  text-align: center;
+  margin:40px auto;
 }
