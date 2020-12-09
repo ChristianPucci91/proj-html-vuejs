@@ -8,7 +8,7 @@ img {
   width: 100%;
 }
 .container{
- width: 90%;
+ width: 92%;
  margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
-  height: 1000px;
+  height: 700px;
   padding: 25px 0;
 }
 /* header nav */
@@ -75,4 +75,25 @@ header {
 }
 .jumbo_text > * {
   margin:50px;
+}
+
+/* Inizio regole main */
+
+/* Section 1 */
+
+.section_1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:40px auto;
+}
+.section1_box {
+  width: 15%;
+  background: #F2F8FC;
+  border:1px solid #EFEFEF;
+  padding: 40px;
+}
+.section1_box > * {
+  margin:10px 0;
+  text-align: center;
 }

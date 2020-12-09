@@ -60,9 +60,14 @@
       </header> <!-- fine header -->
       <main>
 
-        <section class="container"> <!-- sezione 1 del main -->
+        <section> <!-- sezione 1 del main -->
 
-          <div> <!-- box con icona e testo che andremo a generare con vue js -->
+          <div class="container section_1">
+
+            <div class="section1_box" v-for="box in section1">
+              <img :src="box.img" alt="">
+              <p>{{box.text}}</p>
+            </div>
 
           </div>
 
