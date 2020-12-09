@@ -4,6 +4,18 @@
   padding:0;
   box-sizing: border-box;
   /* debug */
-  background: red;
+  background: blue;
   /* fine debug */
 }
+
+/* classi test */
+.container{
+ width: 90%;
+ margin: auto;
+ background: lightblue;
+ border:1px solid black;
+}
+header,section{
+  height: 100px;
+}
+/* fine test */
