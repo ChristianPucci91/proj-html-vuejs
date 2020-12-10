@@ -472,12 +472,14 @@ header {
 }
 .table_column {
   width: 25%;
+  border-top:5px solid #D6F2F6;
 }
 .table_top {
   height: 250px;
   border:1px solid grey;
   text-align: center;
   background: #F2F8FC;
+  border:1px solid #EFEFEF;
 }
 
 .table_box {
@@ -487,13 +489,36 @@ header {
   line-height: 80px;
   background: #FBF9F9;
   color:#847B7B;
+  border:1px solid #EFEFEF;
 }
-
+.table_box p {
+  font-size: 20px;
+}
+.table_box .fas.fa-check{
+  color:#40C4FF;
+}
 .button_box{
   height: 100px;
   border:1px solid grey;
+  text-align: center;
+  line-height: 100px;
+  background: #F2F8FC;
+  border: 1px solid #EFEFEF;
 }
-
+.button_box button {
+  padding: 15px 25px;
+  background: #FBF9F9;
+  color:#606264;
+  border: 1px solid #EFEFEF;
+  font-weight: bold;
+}
+#selected {
+  border-top:5px solid #40C4FF;
+}
+#selected .button_box button {
+  color:#fff;
+  background: #40C4FF;
+}
 /* Section 8 */
 
 .section_8{
