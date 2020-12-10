@@ -79,5 +79,10 @@ var app = new Vue({
      {icon:"fa-instagram"},
      {icon:"fa-facebook"}
    ]
+ },
+ methods:{
+   scrollTop() {
+     window.scrollTo(0,0);
+   },
   }
 })
