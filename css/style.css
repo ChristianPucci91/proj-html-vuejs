@@ -279,4 +279,35 @@ header {
 
 footer {
   background: grey;
+  height: 500px;
+}
+.footer_column{
+  width: 25%;
+}
+.footer_nav {
+  display: flex;
+  padding:100px 0;
+  height: 75%;
+}
+/* Footer 1 */
+
+.footer1_img{
+  width: 150px;
+}
+.footer1_info{
+  display: flex;
+  flex-direction: column;
+}
+
+/* credits */
+
+.credits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25%;
+  border-top: 1px solid lightgrey;
+}
+.credits_right > * {
+  margin:auto 10px;
 }

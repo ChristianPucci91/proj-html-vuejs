@@ -445,10 +445,80 @@
       </main> <!-- fine main -->
       <footer> <!-- footer blocchi info + credits -->
 
-        <nav> <!-- info & links footer -->
+        <nav class="footer_nav container"> <!-- info & links footer -->
+
+          <div v-for="item in footer1" class="footer_column">
+           <div class="footer1_img">
+
+            <img :src="item.img" alt="">
+
+           </div>
+           <ul>
+
+             <li v-for="obj in item.info">{{obj.text}}</li>
+
+           </ul>
+           <div class="footer1_info">
+
+             <i class="fas fa-phone-alt"><span>{{item.contact}}</span></i>
+             <i class="far fa-clock"><span>{{item.time}}</span></i>
+
+           </div>
+
+          </div>
+          <div v-for="item in footer2" class="footer_column">
+           <div class="footer1_title">
+
+             <h1>{{item.title}}</h1>
+
+           </div>
+           <ul v-for="obj in item.info" class="test">
+
+             <li>{{obj.text}}</li>
+             <li>{{obj.name}}</li>
+
+           </ul>
+
+          </div>
+          <div v-for="item in footer3" class="footer_column">
+           <div class="footer1_title">
+
+             <h1>{{item.title}}</h1>
+
+           </div>
+           <ul class="test">
+
+             <li v-for="obj in item.info">{{obj.text}}</li>
+
+           </ul>
+
+          </div>
+          <div v-for="item in footer4" class="footer_column">
+           <div class="footer1_title">
+
+             <h1>{{item.title}}</h1>
+
+           </div>
+           <div class="test">
+
+             <img :src="item.img" alt="">
+
+           </div>
+
+          </div>
+
 
         </nav>
-        <div> <!-- footer credits -->
+        <div class="container credits"> <!-- footer credits -->
+          <div class="credits_left">
+            <p>Copyrights 2017 &copy; Mikado Themes</p>
+          </div>
+          <div class="credits_right">
+
+            <span>CALL {{call}}</span>
+            <span>FOLLOW US</span><i v-for="icon in social" :class="['fab',icon.icon]"></i>
+
+          </div>
 
         </div>
 
