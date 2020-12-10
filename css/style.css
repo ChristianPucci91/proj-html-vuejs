@@ -28,6 +28,12 @@ header {
   background-repeat: no-repeat;
   background-size:cover;
 }
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
 /* header nav */
 .logo {
   width:15%;
@@ -105,6 +111,9 @@ header {
 }
 .jumbo_text > * {
   margin:50px;
+}
+.carousel > * {
+  margin:0 10px;
 }
 .carousel > .fas.fa-circle{
   color:#CECECE;
@@ -617,6 +626,9 @@ footer {
   margin:15px 0;
   text-decoration: none;
   color:#92919C;
+}
+.footer_3_text a:hover{
+  color:#55ACEE;
 }
 .footer_4_text img {
   width: 250px;

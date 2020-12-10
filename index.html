@@ -36,7 +36,7 @@
 
           </div>
           <div class="right_menu"> <!-- contenitore search + checkout + hamburger menu -->
-            <i v-for="icon in menuNav" :class="['fas',icon.icon]"></i>
+            <i v-for="icon in menuNav" :class="['fas',icon.icon]" ></i>
             <span class="counter">{{counter}}</span>
 
           </div>
@@ -46,8 +46,8 @@
 
           <div class="jumbo_text">
 
-            <h1>Contemporary Ideas</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <h1>{{jumboCarousel[carouselIndex].title}}</h1>
+            <p>{{jumboCarousel[carouselIndex].subtitle}}</p>
 
           </div>
           <div class="button">REGISTER NOW</div>
@@ -55,9 +55,7 @@
         </div>
         <div class="carousel"> <!-- carousel buttons -->
 
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-          <i class="far fa-dot-circle"></i>
+          <i v-for="(item,index) in jumboCarousel" @click="headerCarousel(index)" :class="(index == carouselIndex)? 'far fa-dot-circle':'fas fa-circle'"></i>
 
         </div>
 

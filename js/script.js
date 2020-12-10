@@ -3,6 +3,21 @@ var app = new Vue({
   el: "#app",
   data: {
    logo:"img/logo.png",
+   jumboCarousel:[ // carousel header
+     {
+       title:"Contemporary Ideas",
+       subtitle:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+     },
+     {
+       title:"Contemporary Ideas 2",
+       subtitle:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. 2"
+     },
+     {
+       title:"Contemporary Ideas 3",
+       subtitle:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. 3"
+     }
+   ],
+   carouselIndex:0,
    counter:0,
    navBar:[ // array link navbar
      {section:"Home",link:"#"},
@@ -77,12 +92,15 @@ var app = new Vue({
    social:[ // icon footer
      {icon:"fa-twitter"},
      {icon:"fa-instagram"},
-     {icon:"fa-facebook"}
+     {icon:"fa-facebook-f"}
    ]
  },
  methods:{ // torna all'header al click
    scrollTop() {
      window.scrollTo(0,0);
    },
+   headerCarousel: function(index){
+     this.carouselIndex = index;
+   }
   }
 })
