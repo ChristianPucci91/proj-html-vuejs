@@ -3,6 +3,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 img {
   width: 100%;
@@ -11,6 +12,9 @@ img {
  width: 92%;
  margin: 0 auto;
 }
+section {
+  margin:100px auto;
+}
 
 /* regole per sezione header */
 header {
@@ -18,12 +22,12 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 700px;
+  padding: 25px 0;
   background-image: url("../img/jumbotron.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
-  height: 700px;
-  padding: 25px 0;
 }
 /* header nav */
 .logo {
@@ -36,6 +40,12 @@ header {
 }
 .center_menu {
   width: 75%;
+}
+.center_menu a {
+  font-size:16px;
+  color:#fff;
+  text-decoration: none;
+  font-family:sans-serif;
 }
 .navbar ul {
   display: flex;
@@ -52,10 +62,14 @@ header {
   display: flex;
   justify-content: space-around;
   align-items:center;
+  color:#fff;
+}
+.right_menu .fas.fa-search {
+  transform: rotateY(180deg);
 }
 .counter{
   position: absolute;
-  background: lightblue;
+  background: #40C4FF;
   padding: 1px 4px;
   border-radius: 100%;
   left: 52%;
@@ -73,20 +87,32 @@ header {
   color:white;
 }
 .jumbotron h1 {
-  font-size: 80px;
+  font-size: 90px;
+  font-family: 'Merriweather', serif;
+  font-weight: revert;
 }
 .jumbotron p {
   font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
-.jumbotron button {
-  background-color: lightblue;
-  width: 150px;
-  height: 50px;
+.jumbotron  .button {
+  background-color: #40C4FF;
+  width: 200px;
+  height: 60px;
+  margin: auto;
+  line-height: 60px;
 }
 .jumbo_text > * {
   margin:50px;
 }
-
+.carousel > .fas.fa-circle{
+  color:#CECECE;
+  opacity: 0.5;
+}
+.carousel > .far.fa-dot-circle{
+  color:#fff;
+}
 /* Inizio regole main */
 
 /* Section 1 */
@@ -95,7 +121,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin:40px auto;
 }
 .section1_box {
   width: 15%;
@@ -104,7 +129,7 @@ header {
   padding: 40px;
 }
 .section1_box > * {
-  margin:10px 0;
+  padding: 20px;
   text-align: center;
 }
 

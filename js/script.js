@@ -5,12 +5,12 @@ var app = new Vue({
    logo:"img/logo.png",
    counter:0,
    navBar:[ // array link navbar
-     {section:"Home"},
-     {section:"Courses"},
-     {section:"Intructors"},
-     {section:"Events"},
-     {section:"Pages"},
-     {section:"Elements"}
+     {section:"Home",link:"#"},
+     {section:"Courses",link:"#"},
+     {section:"Intructors",link:"#"},
+     {section:"Events",link:"#"},
+     {section:"Pages",link:"#"},
+     {section:"Elements",link:"#"}
    ],
    menuNav:[ // icon Header
      {icon:"fa-search"},

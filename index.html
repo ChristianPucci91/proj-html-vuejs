@@ -6,6 +6,12 @@
     <title>Proj-html-vuejs Icademy</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
   </head>
@@ -25,7 +31,7 @@
           <div class="center_menu"> <!-- navigation bar -->
 
             <ul>
-              <li v-for="item in navBar">{{item.section}}</li>
+              <a :href="item.link" v-for="item in navBar">{{item.section.toUpperCase()}}</a>
             </ul>
 
           </div>
@@ -41,13 +47,13 @@
           <div class="jumbo_text">
 
             <h1>Contemporary Ideas</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
 
           </div>
-          <button type="button" name="button">REGISTER NOW</button>
+          <div class="button">REGISTER NOW</div>
 
         </div>
-        <div> <!-- carousel buttons -->
+        <div class="carousel"> <!-- carousel buttons -->
 
           <i class="fas fa-circle"></i>
           <i class="fas fa-circle"></i>
