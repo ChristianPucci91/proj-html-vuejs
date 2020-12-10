@@ -47,10 +47,20 @@ header {
   margin:0 10px;
 }
 .right_menu {
+  position: relative;
   width: 10%;
   display: flex;
   justify-content: space-around;
   align-items:center;
+}
+.counter{
+  position: absolute;
+  background: lightblue;
+  padding: 1px 4px;
+  border-radius: 100%;
+  left: 52%;
+  bottom: 45%;
+  font-size: 12px;
 }
 /* jumbotron text */
 .jumbotron {

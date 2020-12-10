@@ -3,6 +3,7 @@ var app = new Vue({
   el: "#app",
   data: {
    logo:"img/logo.png",
+   counter:0,
    navBar:[ // array link navbar
      {section:"Home"},
      {section:"Courses"},
@@ -10,6 +11,11 @@ var app = new Vue({
      {section:"Events"},
      {section:"Pages"},
      {section:"Elements"}
+   ],
+   menuNav:[ // icon Header
+     {icon:"fa-search"},
+     {icon:"fa-shopping-bag"},
+     {icon:"fa-bars"}
    ],
    section1:[ //icone e testo section 1
      {img:"img/h5-custom-icon-1.png",text:"Languages"},
