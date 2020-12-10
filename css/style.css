@@ -15,12 +15,6 @@ img {
 section {
   margin:100px auto;
 }
-.show{
-  display: block;
-}
-.hide{
-  display: none;
-}
 /* regole per sezione header */
 header {
   display: flex;
@@ -100,6 +94,7 @@ header {
   font-size: 20px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
+  color:#FFFFFFCC;
 }
 .jumbotron  .button {
   background-color: #40C4FF;
@@ -131,11 +126,14 @@ header {
   width: 15%;
   background: #F2F8FC;
   border:1px solid #EFEFEF;
+}
+
+.section1_box > div:first-child {
   padding: 40px;
 }
-.section1_box > * {
-  padding: 20px;
+.section1_box > div:last-child{
   text-align: center;
+  padding-bottom: 40px;
 }
 
 /* Section 2 */
@@ -170,7 +168,7 @@ header {
   position: fixed;
   right: 0;
   z-index: 99;
-  bottom: 50%;
+  bottom:0;
   transform: translate(0,-50%);
 }
 
@@ -178,7 +176,7 @@ header {
 
 .section_3 {
   display: flex;
-  margin:100px auto;
+  margin:100px 0 0 0;
 }
 .section_3 > * {
   width: 50%;
@@ -213,7 +211,9 @@ header {
 }
 
 /* Section 4 */
-
+.logo_section_4 {
+  width: 150px;
+}
 .section_4 {
   background-image: url("../img/h5-parallax-img-1.png");
   background-position-x: center;
@@ -222,17 +222,37 @@ header {
 .section_4_items {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100%;
 }
 .section_4_text > *{
-  margin:25px auto;
   text-align: center;
+  color:#FFFFFFCC;
 }
-.logo_section_4 {
-  width: 150px;
+.section_4_text > p {
+  margin: 50px auto;
+  font-size: 20px;
+  font-family: 'Merriweather', sans-serif;
 }
+.section_4_text > h2 {
+  margin:20px auto;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 30px;
+  color:#fff;
+}
+.section_4_carousel > i{
+  margin-top:40px;
+}
+.section_4_carousel > i:first-child,
+.section_4_carousel > i:last-child{
+  color:#E5E5E5;
+  margin:0 10px;
+}
+.section_4_carousel > i {
+  color:#FFFFFF;
+}
+
 
 /* Section_5 */
 
