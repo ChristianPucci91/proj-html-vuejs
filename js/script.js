@@ -60,11 +60,11 @@ var app = new Vue({
      {
        title:"Support",
        info:[
-         {text:"User dashboard"},
-         {text:"Contact Us"},
-         {text:"FAQ"},
-         {text:"Course Offer"},
-         {text:"Events"}
+         {text:"User dashboard",link:"#"},
+         {text:"Contact Us",link:"#"},
+         {text:"FAQ",link:"#"},
+         {text:"Course Offer",link:"#"},
+         {text:"Events",link:"#"}
        ]
      }
    ],
@@ -80,7 +80,7 @@ var app = new Vue({
      {icon:"fa-facebook"}
    ]
  },
- methods:{
+ methods:{ // torna all'header al click
    scrollTop() {
      window.scrollTo(0,0);
    },

@@ -303,13 +303,24 @@
           <div class="section_6_bottom"> <!-- carosello -->
 
             <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
+            <i id="active"class="fas fa-circle"></i>
             <i class="fas fa-circle"></i>
 
           </div>
 
         </section>
         <section class="section_7"> <!-- sezione 7 del main -->
+
+          <div class="section_7_logo_2"> <!-- logo  -->
+
+           <img src="img/svg-3.svg" alt="">
+
+          </div>
+          <div class="section_7_logo_1"> <!-- logo shopping bag -->
+
+           <img src="img/svg-2.svg" alt="">
+
+          </div>
 
          <div class="section_7_title">
 
@@ -511,15 +522,19 @@
             <img :src="item.img" alt="">
 
            </div>
-           <ul>
+           <ul class="footer_1_text">
 
              <li v-for="obj in item.info">{{obj.text}}</li>
 
            </ul>
            <div class="footer1_info">
 
-             <i class="fas fa-phone-alt"><span>{{item.contact}}</span></i>
-             <i class="far fa-clock"><span>{{item.time}}</span></i>
+             <i class="fas fa-phone-alt"></i><p>{{item.contact}}</p>
+
+           </div>
+           <div class="footer1_info">
+
+             <i class="far fa-clock"></i><p>{{item.time}}</p>
 
            </div>
 
@@ -530,7 +545,7 @@
              <h1>{{item.title}}</h1>
 
            </div>
-           <ul v-for="obj in item.info" class="test">
+           <ul v-for="obj in item.info" class="footer_2_text">
 
              <li>{{obj.text}}</li>
              <li>{{obj.name}}</li>
@@ -544,9 +559,9 @@
              <h1>{{item.title}}</h1>
 
            </div>
-           <ul class="test">
+           <ul class="footer_3_text">
 
-             <li v-for="obj in item.info">{{obj.text}}</li>
+             <a :href="obj.link" v-for="obj in item.info">{{obj.text}}</a>
 
            </ul>
 
@@ -557,7 +572,7 @@
              <h1>{{item.title}}</h1>
 
            </div>
-           <div class="test">
+           <div class="footer_4_text">
 
              <img :src="item.img" alt="">
 
