@@ -90,9 +90,9 @@ var app = new Vue({
    call:"+44 300 303 0266", // info footer
 
    social:[ // icon footer
-     {icon:"fa-twitter"},
-     {icon:"fa-instagram"},
-     {icon:"fa-facebook-f"}
+     {icon:"fa-twitter",link:"#"},
+     {icon:"fa-instagram",link:"#"},
+     {icon:"fa-facebook-f",link:"#"}
    ]
  },
  methods:{ // torna all'header al click

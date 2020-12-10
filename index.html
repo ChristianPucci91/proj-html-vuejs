@@ -587,7 +587,7 @@
           <div class="credits_right">
 
             <span>CALL {{call}}</span>
-            <span>FOLLOW US</span><i v-for="icon in social" :class="['fab',icon.icon]"></i>
+            <span>FOLLOW US</span><a v-for="icon in social" :href="icon.link"><i :class="['fab',icon.icon]"></i></a>
 
           </div>
 
