@@ -141,7 +141,7 @@
           <div
           v-for="(item,index) in section4"
           class="container section_4_items"
-          v-if=""> <!-- ci sarà un logo + testo con un carosello-->
+          v-if="index == section4index"> <!-- ci sarà un logo + testo con un carosello-->
             <div class="logo_section_4">
 
               <img :src="section4[section4index].img" alt="">

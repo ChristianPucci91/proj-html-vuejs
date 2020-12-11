@@ -40,8 +40,8 @@ var app = new Vue({
      {img:"img/h5-custom-icon-5.png",text:"Science"},
      {img:"img/h5-custom-icon-6.png",text:"DIY&Craft"}
    ],
-   section4index:0,
-   section4:[
+   section4index:0, // index secondo carousel sezione 4
+   section4:[ // array secondo carousel
      {
        img:"img/testimonials-standard-2.png",
        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
