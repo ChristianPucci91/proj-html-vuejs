@@ -275,14 +275,6 @@ header {
   margin:40px 10px;
 }
 
-
-/* .section_4_carousel > i:first-child,
-.section_4_carousel > i:last-child{
-  color:#E5E5E5;
-  margin:0 10px;
-} */
-
-
 /* Section_5 */
 
 .section_5 {
@@ -303,12 +295,15 @@ header {
   text-align: left;
   line-height: 100px;
 }
-.section_5_menu > .section_5_box:first-child > div {
+.border {
   border-left:10px solid #40C4FF;
   color:#40C4FF;
   background: #FBF9F9;
 }
-.section_5_menu > .section_5_box:nth-last-child(-n+5) {
+.text_color {
+  color:#40C4FF;
+}
+.section_5_box {
   color:#847B7B;
 }
 .section_5_box p {

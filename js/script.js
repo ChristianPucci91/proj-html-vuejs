@@ -61,13 +61,42 @@ var app = new Vue({
        id:"STUDENT 3"
      }
    ],
+   section5index:0,
    section5:[ // menu drop sezione 5
-     {text:"What We Do"},
-     {text:"Degree Programme"},
-     {text:"Career Achievements"},
-     {text:"Personal Managment"},
-     {text:"Steps To Success"},
-     {text:"Knowledge Transfer"},
+     {
+       menu:"What We Do",
+       title:"Learning Possibilities",
+       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+       subText:"We enrich lives through learning."
+     },
+     {
+       menu:"Degree Programme",
+       title:"Learning Possibilities 2",
+       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 2",
+       subText:"Maximizing potential through individual attention."
+     },
+     {
+       menu:"Career Achievements",
+       title:"Learning Possibilities 3",
+       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 3",
+       subText:"The trusted name for specialized training."
+     },
+     {
+       menu:"Personal Managment",
+       title:"Learning Possibilities 4",
+       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 4",
+       subText:"People tech.People learn.This is where they connect."
+     },
+     {
+       menu:"Steps To Success",
+       title:"Learning Possibilities 5",
+       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 5",
+     },
+     {
+       menu:"Knowledge Transfer",
+       title:"Learning Possibilities 6",
+       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 6",
+     },
    ],
    footer1:[ //Footer 1 colonna
      {
@@ -126,6 +155,10 @@ var app = new Vue({
    },
    section4Carousel: function(index){
      this.section4index = index;
+   },
+   section5Menu: function(index){
+     this.section5index = index;
+     console.log(this.section5index);
    }
   }
 })
