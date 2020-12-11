@@ -17,8 +17,11 @@ var app = new Vue({
        subtitle:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. 3"
      }
    ],
-   carouselIndex:0,
-   counter:0,
+   learnMore:[ // tasto LEARN MORE che rimanderà in una sezione del sito
+     {name:'LEARN MORE',link:'#'}
+   ],
+   carouselIndex:0, // index per carousel sezione Header
+   counter:0, // contatore oggetti nel carrello
    navBar:[ // array link navbar
      {section:"Home",link:"#"},
      {section:"Courses",link:"#"},
@@ -44,19 +47,19 @@ var app = new Vue({
    section4:[ // array secondo carousel
      {
        img:"img/testimonials-standard-2.png",
-       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+       text:'"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
        name:"Joan Collins",
        id:"STUDENT"
      },
      {
        img:"img/testimonials-standard-3.png",
-       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 2",
+       text:'"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 2"',
        name:"Joan Collins 2",
        id:"STUDENT 2"
      },
      {
        img:"img/testimonials-standard-4.png",
-       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 3",
+       text:'"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 3"',
        name:"Joan Collins 3",
        id:"STUDENT 3"
      }
@@ -184,13 +187,13 @@ var app = new Vue({
    scrollTop() {
      window.scrollTo(0,0);
    },
-   headerCarousel: function(index){
+   headerCarousel: function(index){ // INDEX carousel header
      this.carouselIndex = index;
    },
-   section4Carousel: function(index){
+   section4Carousel: function(index){ // INDEX carousel sezione 4
      this.section4index = index;
    },
-   section5Menu: function(index){
+   section5Menu: function(index){ // side-menu sezione 5
      this.section5index = index;
      console.log(this.section5index);
    }

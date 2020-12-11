@@ -89,13 +89,13 @@
 
             <h1>The Trusted Name <br> for In-Home Tutoring.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a href="#">LEARN MORE</a>
+            <a v-for="item in learnMore" :href="item.link">{{item.name}}</a>
 
           </div>
           <div @click="scrollTop()"class="top_button"> <!-- TOP button -->
 
             <div><i class="fas fa-chevron-up"></i></div>
-            <div>TOP</div>
+            <p>TOP</p>
 
           </div>
           <div> <!-- Img section 2 -->
