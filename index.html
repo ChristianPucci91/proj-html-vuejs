@@ -176,12 +176,12 @@
 
           </div>
           <div class="section_5_text"> <!-- testo a lato del menu -->
-            <h1>{{section5[0].title}}</h1>
-            <p>{{section5[0].text}}</p>
-            <div v-for="icon in section5" class="checked">
+            <h1>{{section5[section5index].title}}</h1>
+            <p>{{section5[section5index].text}}</p>
+            <div v-for="item in section5[section5index].textArray" class="checked">
 
               <i class="fas fa-check"></i>
-              <p>{{section5[0].subText}}</p>
+              <p>{{item.subText}}</p>
 
             </div>
 

@@ -61,41 +61,75 @@ var app = new Vue({
        id:"STUDENT 3"
      }
    ],
-   section5index:0,
+   section5index:0, // index section 5
    section5:[ // menu drop sezione 5
      {
        menu:"What We Do",
        title:"Learning Possibilities",
        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-       subText:"We enrich lives through learning."
+       textArray:[
+         {subText:"We enrich lives through learning."},
+         {subText:"Maximizing potential through individual attention."},
+         {subText:"The trusted name for specialized training."},
+         {subText:"People tech.People learn.This is where they connect."}
+       ]
      },
      {
        menu:"Degree Programme",
        title:"Learning Possibilities 2",
        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 2",
-       subText:"Maximizing potential through individual attention."
+       textArray:[
+         {subText:"We enrich lives through learning. 2"},
+         {subText:"Maximizing potential through individual attention. 2"},
+         {subText:"The trusted name for specialized training. 2"},
+         {subText:"People tech.People learn.This is where they connect. 2"}
+       ]
      },
      {
        menu:"Career Achievements",
        title:"Learning Possibilities 3",
        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 3",
-       subText:"The trusted name for specialized training."
+       textArray:[
+         {subText:"We enrich lives through learning. 3"},
+         {subText:"Maximizing potential through individual attention. 3"},
+         {subText:"The trusted name for specialized training. 3"},
+         {subText:"People tech.People learn.This is where they connect. 3"}
+       ]
+
      },
      {
        menu:"Personal Managment",
        title:"Learning Possibilities 4",
        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 4",
-       subText:"People tech.People learn.This is where they connect."
+       textArray:[
+         {subText:"We enrich lives through learning. 4"},
+         {subText:"Maximizing potential through individual attention. 4"},
+         {subText:"The trusted name for specialized training. 4"},
+         {subText:"People tech.People learn.This is where they connect. 4"}
+       ]
      },
      {
        menu:"Steps To Success",
        title:"Learning Possibilities 5",
        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 5",
+       textArray:[
+         {subText:"We enrich lives through learning. 5"},
+         {subText:"Maximizing potential through individual attention. 5"},
+         {subText:"The trusted name for specialized training. 5"},
+         {subText:"People tech.People learn.This is where they connect. 5"}
+       ]
+
      },
      {
        menu:"Knowledge Transfer",
        title:"Learning Possibilities 6",
        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 6",
+       textArray:[
+         {subText:"We enrich lives through learning. 6"},
+         {subText:"Maximizing potential through individual attention. 6"},
+         {subText:"The trusted name for specialized training. 6"},
+         {subText:"People tech.People learn.This is where they connect. 6"}
+       ]
      },
    ],
    footer1:[ //Footer 1 colonna
