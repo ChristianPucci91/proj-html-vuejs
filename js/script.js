@@ -40,6 +40,27 @@ var app = new Vue({
      {img:"img/h5-custom-icon-5.png",text:"Science"},
      {img:"img/h5-custom-icon-6.png",text:"DIY&Craft"}
    ],
+   section4index:0,
+   section4:[
+     {
+       img:"img/testimonials-standard-2.png",
+       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+       name:"Joan Collins",
+       id:"STUDENT"
+     },
+     {
+       img:"img/testimonials-standard-3.png",
+       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 2",
+       name:"Joan Collins 2",
+       id:"STUDENT 2"
+     },
+     {
+       img:"img/testimonials-standard-4.png",
+       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 3",
+       name:"Joan Collins 3",
+       id:"STUDENT 3"
+     }
+   ],
    section5:[ // menu drop sezione 5
      {text:"What We Do"},
      {text:"Degree Programme"},
@@ -95,12 +116,16 @@ var app = new Vue({
      {icon:"fa-facebook-f",link:"#"}
    ]
  },
+
  methods:{ // torna all'header al click
    scrollTop() {
      window.scrollTo(0,0);
    },
    headerCarousel: function(index){
      this.carouselIndex = index;
+   },
+   section4Carousel: function(index){
+     this.section4index = index;
    }
   }
 })

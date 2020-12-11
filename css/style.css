@@ -15,6 +15,7 @@ img {
 section {
   margin:100px auto;
 }
+
 /* regole per sezione header */
 header {
   display: flex;
@@ -109,6 +110,9 @@ header {
   margin: auto;
   line-height: 60px;
 }
+.button:hover {
+  background-color: #55ACEE;
+}
 .jumbo_text > * {
   margin:50px;
 }
@@ -135,10 +139,16 @@ header {
   width: 15%;
   background: #F2F8FC;
   border:1px solid #EFEFEF;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section1_box > div:first-child {
-  padding: 40px;
+  width: 40%;
+  margin:auto;
 }
 .section1_box > div:last-child{
   text-align: center;
@@ -160,10 +170,14 @@ header {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
+
 .section_2_text > a {
   text-decoration: none;
   color:#40C4FF;
   font-family: 'Roboto', sans-serif;
+}
+.section_2_text > a:hover {
+  color:#55ACEE;
 }
 
 /* TOP button */
@@ -196,9 +210,10 @@ header {
   font-weight: 900;
 }
 .section_3_text > p {
-  font-size: 17px;
+  font-size: 18px;
   font-family: 'Lato', sans-serif;
   margin:30px 0;
+  font-weight: bold;
 }
 .section_3_numbers{
   display: flex;
@@ -250,17 +265,22 @@ header {
   font-size: 30px;
   color:#fff;
 }
-.section_4_carousel > i{
-  margin-top:40px;
+.active {
+  color:#FFF;
 }
-.section_4_carousel > i:first-child,
+.not_active{
+  color:#E5E5E5;
+}
+.section_4_carousel  i{
+  margin:40px 10px;
+}
+
+
+/* .section_4_carousel > i:first-child,
 .section_4_carousel > i:last-child{
   color:#E5E5E5;
   margin:0 10px;
-}
-.section_4_carousel > i {
-  color:#FFFFFF;
-}
+} */
 
 
 /* Section_5 */

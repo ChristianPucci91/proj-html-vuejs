@@ -138,23 +138,24 @@
         </section>
         <section class=" section_4"> <!-- sezione 4 del main // section avrà un img di sfondo -->
 
-          <div class="container section_4_items"> <!-- ci sarà un logo + testo con un carosello-->
+          <div
+          v-for="(item,index) in section4"
+          class="container section_4_items"
+          v-if=""> <!-- ci sarà un logo + testo con un carosello-->
             <div class="logo_section_4">
 
-              <img src="img/testimonials-standard-2.png" alt="">
+              <img :src="section4[section4index].img" alt="">
 
             </div>
             <div class="section_4_text">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
-              <h2>Joan Collins</h2>
-              <h4>STUDENT</h4>
+              <p>{{section4[section4index].text}}</p>
+              <h2>{{section4[section4index].name}}</h2>
+              <h4>{{section4[section4index].id}}</h4>
 
             </div>
             <div class="section_4_carousel">
 
-              <i class="fas fa-circle"></i>
-              <i class="fas fa-circle active"></i>
-              <i class="fas fa-circle"></i>
+              <i v-for="(item,index) in section4" @click="section4Carousel(index)" :class="(index == section4index)? 'fas fa-circle active':'fas fa-circle not_active'"></i>
 
             </div>
 
